@@ -1,0 +1,24 @@
+using System;
+using System.Globalization;
+
+class HolidaysBetweenTwoDates
+{
+    static void Main()
+    {
+        int name = int.Parse(Console.ReadLine());
+
+        int lastDigit = name % 10;
+
+        string digit = lastDigit == 1 ? "one" :
+            lastDigit == 2 ? "two" :
+            lastDigit == 3 ? "three" :
+            lastDigit == 4 ? "four" :
+            lastDigit == 5 ? "five" :
+            lastDigit == 6 ? "six" :
+            lastDigit == 7 ? "seven" :
+            lastDigit == 8 ? "eight" :
+            lastDigit == 9 ? "nine" : "zero";
+
+        Console.WriteLine(digit);
+    }
+}
